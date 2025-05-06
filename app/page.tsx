@@ -1,6 +1,6 @@
 import Image from "next/image"
 import nextConfig from "../next.config.mjs";
-const BASE_PATH = nextConfig.basePath || "";
+const BASE_PATH = "fitness-exe-landing_20250425_out";
 import Link from "next/link"
 import { PhoneCall, Mail, CheckCircle, ArrowRight, Users, ClipboardList, HeartHandshake } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"

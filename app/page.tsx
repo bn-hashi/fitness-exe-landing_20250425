@@ -1,4 +1,6 @@
 import Image from "next/image"
+import nextConfig from "../next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
 import Link from "next/link"
 import { PhoneCall, Mail, CheckCircle, ArrowRight, Users, ClipboardList, HeartHandshake } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -38,7 +40,7 @@ export default function Home() {
       <div className="relative h-[600px] w-full bg-zinc-900 overflow-hidden">
         {/* 背景画像 */}
         <Image
-          src={null || "/placeholder.svg"}
+          src={`${BASE_PATH}/placeholder.svg`}
           alt="フィットネスの背景"
           fill
           className="object-cover opacity-80"
@@ -55,7 +57,7 @@ export default function Home() {
           <div className="text-center mb-8">
             <p className="text-white text-xl mb-2">exe</p>
             <div className="flex justify-center mb-2">
-              <Image src={null || "/placeholder.svg"} alt="ダンベルアイコン" width={60} height={40} />
+              <Image src={`${BASE_PATH}/placeholder.svg`} alt="ダンベルアイコン" width={60} height={40} />
             </div>
             <p className="text-white text-xl">Fitness Garage</p>
           </div>
@@ -84,7 +86,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/3">
             <Image
-              src={null || "/placeholder.svg"}
+              src={`${BASE_PATH}/placeholder.svg`}
               alt="お悩みの女性"
               width={400}
               height={500}
@@ -179,7 +181,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="overflow-hidden rounded-lg shadow-md">
               <Image
-                src={null || "/placeholder.svg"}
+                src={`${BASE_PATH}/placeholder.svg`}
                 alt="ジム内装1"
                 width={400}
                 height={300}
@@ -188,7 +190,7 @@ export default function Home() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
               <Image
-                src={null || "/placeholder.svg"}
+                src={`${BASE_PATH}/placeholder.svg`}
                 alt="ジム内装2"
                 width={400}
                 height={300}
@@ -197,7 +199,7 @@ export default function Home() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
               <Image
-                src={null || "/placeholder.svg"}
+                src={`${BASE_PATH}/placeholder.svg`}
                 alt="ジム内装3"
                 width={400}
                 height={300}
@@ -206,7 +208,7 @@ export default function Home() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
               <Image
-                src={null || "/placeholder.svg"}
+                src={`${BASE_PATH}/placeholder.svg`}
                 alt="ジム内装4"
                 width={400}
                 height={300}
@@ -215,7 +217,7 @@ export default function Home() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
               <Image
-                src={null || "/placeholder.svg"}
+                src={`${BASE_PATH}/placeholder.svg`}
                 alt="ジム内装5"
                 width={400}
                 height={300}
@@ -224,7 +226,7 @@ export default function Home() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
               <Image
-                src={null || "/placeholder.svg"}
+                src={`${BASE_PATH}/placeholder.svg`}
                 alt="ジム内装6"
                 width={400}
                 height={300}
@@ -241,7 +243,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <Image
-                src={null || "/placeholder.svg"}
+                src={`${BASE_PATH}/placeholder.svg`}
                 alt="笑顔の女性"
                 width={500}
                 height={600}
@@ -487,7 +489,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
             <Image
-              src={null || "/placeholder.svg"}
+              src={`${BASE_PATH}/placeholder.svg`}
               alt="ダンベルアイコン"
               width={30}
               height={20}
@@ -499,7 +501,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-80">
-                <Image src={null || "/placeholder.svg"} alt="男性トレーナー" fill className="object-cover" />
+                <Image src={`${BASE_PATH}/placeholder.svg`} alt="男性トレーナー" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">鈴木 健太</h3>
@@ -521,7 +523,7 @@ export default function Home() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-80">
-                <Image src={null || "/placeholder.svg"} alt="女性トレーナー" fill className="object-cover" />
+                <Image src={`${BASE_PATH}/placeholder.svg`} alt="女性トレーナー" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">佐藤 美咲</h3>
@@ -552,11 +554,11 @@ export default function Home() {
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
               <div className="grid grid-cols-2">
                 <div className="relative h-64">
-                  <Image src={null || "/placeholder.svg"} alt="ビフォー" fill className="object-cover" />
+                  <Image src={`${BASE_PATH}/placeholder.svg`} alt="ビフォー" fill className="object-cover" />
                   <div className="absolute top-2 left-2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Before</div>
                 </div>
                 <div className="relative h-64">
-                  <Image src={null || "/placeholder.svg"} alt="アフター" fill className="object-cover" />
+                  <Image src={`${BASE_PATH}/placeholder.svg`} alt="アフター" fill className="object-cover" />
                   <div className="absolute top-2 left-2 bg-amber-600 text-white text-xs py-1 px-2 rounded">After</div>
                 </div>
               </div>
@@ -579,11 +581,11 @@ export default function Home() {
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
               <div className="grid grid-cols-2">
                 <div className="relative h-64">
-                  <Image src={null || "/placeholder.svg"} alt="ビフォー" fill className="object-cover" />
+                  <Image src={`${BASE_PATH}/placeholder.svg`} alt="ビフォー" fill className="object-cover" />
                   <div className="absolute top-2 left-2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Before</div>
                 </div>
                 <div className="relative h-64">
-                  <Image src={null || "/placeholder.svg"} alt="アフター" fill className="object-cover" />
+                  <Image src={`${BASE_PATH}/placeholder.svg`} alt="アフター" fill className="object-cover" />
                   <div className="absolute top-2 left-2 bg-amber-600 text-white text-xs py-1 px-2 rounded">After</div>
                 </div>
               </div>
@@ -606,11 +608,11 @@ export default function Home() {
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
               <div className="grid grid-cols-2">
                 <div className="relative h-64">
-                  <Image src={null || "/placeholder.svg"} alt="ビフォー" fill className="object-cover" />
+                  <Image src={`${BASE_PATH}/placeholder.svg`} alt="ビフォー" fill className="object-cover" />
                   <div className="absolute top-2 left-2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Before</div>
                 </div>
                 <div className="relative h-64">
-                  <Image src={null || "/placeholder.svg"} alt="アフター" fill className="object-cover" />
+                  <Image src={`${BASE_PATH}/placeholder.svg`} alt="アフター" fill className="object-cover" />
                   <div className="absolute top-2 left-2 bg-amber-600 text-white text-xs py-1 px-2 rounded">After</div>
                 </div>
               </div>
@@ -774,7 +776,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between gap-8">
             <div className="md:w-1/3">
               <div className="flex items-center gap-2 mb-4">
-                <Image src={null || "/placeholder.svg"} alt="ダンベルアイコン" width={30} height={20} />
+                <Image src={`${BASE_PATH}/placeholder.svg`} alt="ダンベルアイコン" width={30} height={20} />
                 <span className="text-xl font-bold">Fitness Garage exe</span>
               </div>
               <p className="text-gray-400 text-sm mb-6">

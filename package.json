@@ -2,11 +2,13 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bn-hashi.github.io/fitness-exe-landing_20250425",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "deploy": "npm run build && npm run export && gh-pages -d out",
+    "predeploy": "npm run build && npm run export && touch out/.nojekyll",
+    "deploy": "gh-pages -d out --dotfiles",
     "start": "next start",
     "lint": "next lint"
   },
@@ -67,6 +69,7 @@
     "@types/react-dom": "^19",
     "gh-pages": "^6.3.0",
     "postcss": "^8",
+    "rimraf": "^5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
